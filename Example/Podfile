@@ -1,0 +1,9 @@
+platform :ios, '8.0'
+
+target 'SACPI_Example' do
+  pod 'SACPI', :path => '../'
+
+  target 'SACPI_Tests' do
+    inherit! :search_paths
+  end
+end
