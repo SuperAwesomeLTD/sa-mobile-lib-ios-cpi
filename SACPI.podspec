@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SACPI'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'SuperAwesome CPI solution for iOS'
   s.description      = <<-DESC
 SACPI contains all code required to run the CPI solution for iOS
@@ -9,7 +9,7 @@ SACPI contains all code required to run the CPI solution for iOS
   s.homepage         = 'https://github.com/SuperAwesomeLTD/sa-mobile-lib-ios-cpi'
   s.license          = { :type => 'GNU LESSER GENERAL PUBLIC LICENSE Version 3', :file => 'LICENSE' }
   s.author           = { 'Gabriel Coman' => 'gabriel.coman@superawesome.tv' }
-  s.source           = { :git => 'https://github.com/SuperAwesomeLTD/sa-mobile-lib-ios-cpi.git', :tag => "1.0.0" }
+  s.source           = { :git => 'https://github.com/SuperAwesomeLTD/sa-mobile-lib-ios-cpi.git', :tag => "1.0.1" }
   s.platform = :ios, '7.0'
   s.requires_arc = true
   s.source_files = 'Pod/Classes/**/*'

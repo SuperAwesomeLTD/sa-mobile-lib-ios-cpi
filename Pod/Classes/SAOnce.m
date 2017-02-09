@@ -29,7 +29,7 @@
 }
 
 - (BOOL) isCPISent {
-    return [_defaults objectForKey:KEY];
+    return [_defaults boolForKey:KEY];
 }
 
 - (BOOL) setCPISent {
