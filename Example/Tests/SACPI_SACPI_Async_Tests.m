@@ -59,9 +59,9 @@
         // - as if I was running this from the app that's just been
         //   installed "tv.superawesome.demoapp",
         // - see if the main CPI method executes correctly against a new click
-        [[SACPI getInstance] sendInstallEvent:session
-                                   withTarget:@"tv.superawesome.demoapp"
-                                  andResponse:^(BOOL success) {
+        [[SACPI getInstance] handleInstall:session
+                                withTarget:@"tv.superawesome.demoapp"
+                               andResponse:^(BOOL success) {
         
                                       XCTAssertTrue(success);
                                       XCTAssertTrue([once isCPISent]);
@@ -112,9 +112,9 @@
         // - as if I was running this from the app that's just been
         //   installed "tv.superawesome.demoapp",
         // - see if the main CPI method executes correctly against a new click
-        [[SACPI getInstance] sendInstallEvent:session
-                                   withTarget:@"some.other.app"
-                                  andResponse:^(BOOL success) {
+        [[SACPI getInstance] handleInstall:session
+                                withTarget:@"some.other.app"
+                               andResponse:^(BOOL success) {
                                       
                                       XCTAssertFalse(success);
                                       XCTAssertTrue([once isCPISent]);
