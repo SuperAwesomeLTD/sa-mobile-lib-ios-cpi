@@ -1,11 +1,11 @@
 PODS:
-  - SACPI (1.0.3):
-    - SAModelSpace (= 0.4.3)
+  - SACPI (1.0.4):
+    - SAModelSpace (= 0.4.5)
     - SANetworking (= 0.2.9)
     - SASession (= 0.3.5)
     - SAUtils (= 1.5.0)
   - SAJsonParser (1.3.2)
-  - SAModelSpace (0.4.3):
+  - SAModelSpace (0.4.5):
     - SAJsonParser (= 1.3.2)
     - SAUtils (= 1.5.0)
   - SANetworking (0.2.9)
@@ -21,9 +21,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SACPI: 6b85730440724d2e6c8350fd2db13490c23966d7
+  SACPI: 3625601542bf50186a8389aa40b95678e4004cea
   SAJsonParser: d0db6d8c737c04f8bf4e9474e82825347aa24f58
-  SAModelSpace: 1c131616df7a99d94c5ce587438be1e69f6223c3
+  SAModelSpace: 026bb1509bfce0005a3ff69f8ce2bd9455a07555
   SANetworking: 40e2a8ffd5c680be57dfd91426f3c74933ad1d80
   SASession: 132766325ba7bf55d283bb3bfa4bc5a8c470347e
   SAUtils: 1e8b881ca8c7fac2749c8fd9b851f0b344611035
