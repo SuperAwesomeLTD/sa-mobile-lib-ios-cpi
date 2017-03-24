@@ -1,6 +1,6 @@
 {
   "name": "SACPI",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "summary": "SuperAwesome CPI solution for iOS",
   "description": "SACPI contains all code required to run the CPI solution for iOS",
   "homepage": "https://github.com/SuperAwesomeLTD/sa-mobile-lib-ios-cpi",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/SuperAwesomeLTD/sa-mobile-lib-ios-cpi.git",
-    "tag": "1.0.4"
+    "tag": "1.0.5"
   },
   "platforms": {
     "ios": "8.0"
@@ -31,7 +31,7 @@
       "0.3.5"
     ],
     "SAModelSpace": [
-      "0.4.5"
+      "0.4.6"
     ]
   }
 }
