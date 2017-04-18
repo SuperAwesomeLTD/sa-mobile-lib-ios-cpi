@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "SAInstall.h"
 #import "SANetwork.h"
+#import "SAUtils.h"
 
 @interface SACPI_SAInstall_Async_Tests : XCTestCase
 
@@ -41,19 +42,23 @@
     NSString *clickUrl = [NSString stringWithFormat:@"%@/click", [session getBaseUrl]];
     NSDictionary *clickQuery = @{
                                  @"placement" : @(588),
-                                 @"sourceBundle" : [session getBundleId],
-                                 @"creative" : @(5778),
-                                 @"line_item": @(1063),
+                                 @"bundle" : [session getBundleId],
+                                 @"creative" : @(5782),
+                                 @"line_item": @(1068),
                                  @"ct": @([session getConnectivityType]),
                                  @"sdkVersion": @"0.0.0",
                                  @"rnd" : @([session getCachebuster])
                                  };
     
+    NSDictionary *header = @{
+                             @"User-Agent": [SAUtils getUserAgent]
+                             };
+    
     SANetwork *network = [[SANetwork alloc] init];
-    [network sendGET:clickUrl withQuery:clickQuery andHeader:@{} withResponse:^(NSInteger status, NSString *payload, BOOL success) {
+    [network sendGET:clickUrl withQuery:clickQuery andHeader:header withResponse:^(NSInteger status, NSString *payload, BOOL success) {
        
         // now send the install event
-        NSString *targetPackage = @"tv.superawesome.demoapp";
+        NSString *targetPackage = @"tv.superawesome.SuperAwesome";
         [install sendInstallEventToServer:targetPackage
                               withSession:session andResponse:^(BOOL success) {
                                   XCTAssertTrue(success);

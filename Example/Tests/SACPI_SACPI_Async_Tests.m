@@ -10,6 +10,7 @@
 #import "SACPI.h"
 #import "SAOnce.h"
 #import "SANetwork.h"
+#import "SAUtils.h"
 
 @interface SACPI_SACPI_Async_Tests : XCTestCase
 
@@ -44,16 +45,20 @@
     NSString *clickUrl = [NSString stringWithFormat:@"%@/click", [session getBaseUrl]];
     NSDictionary *clickQuery = @{
                                  @"placement" : @(588),
-                                 @"sourceBundle" : [session getBundleId],
-                                 @"creative" : @(5778),
-                                 @"line_item": @(1063),
+                                 @"bundle" : [session getBundleId],
+                                 @"creative" : @(5782),
+                                 @"line_item": @(1068),
                                  @"ct": @([session getConnectivityType]),
                                  @"sdkVersion": @"0.0.0",
                                  @"rnd" : @([session getCachebuster])
                                  };
+    
+    NSDictionary *header = @{
+                             @"User-Agent": [SAUtils getUserAgent]
+                             };
  
     SANetwork *network = [[SANetwork alloc] init];
-    [network sendGET:clickUrl withQuery:clickQuery andHeader:@{} withResponse:^(NSInteger status, NSString *payload, BOOL success) {
+    [network sendGET:clickUrl withQuery:clickQuery andHeader:header withResponse:^(NSInteger status, NSString *payload, BOOL success) {
         
         // call the whole CPI process:
         // - as if I was running this from the app that's just been
@@ -104,9 +109,12 @@
                                  @"sdkVersion": @"0.0.0",
                                  @"rnd" : @([session getCachebuster])
                                  };
+    NSDictionary *header = @{
+                             @"User-Agent": [SAUtils getUserAgent]
+                             };
     
     SANetwork *network = [[SANetwork alloc] init];
-    [network sendGET:clickUrl withQuery:clickQuery andHeader:@{} withResponse:^(NSInteger status, NSString *payload, BOOL success) {
+    [network sendGET:clickUrl withQuery:clickQuery andHeader:header withResponse:^(NSInteger status, NSString *payload, BOOL success) {
         
         // call the whole CPI process:
         // - as if I was running this from the app that's just been
