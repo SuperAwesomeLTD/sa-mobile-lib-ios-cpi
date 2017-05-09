@@ -1,17 +1,17 @@
 PODS:
-  - SACPI (1.0.6):
-    - SAModelSpace (= 0.4.7)
+  - SACPI (1.0.7):
+    - SAModelSpace (= 0.4.8)
     - SANetworking (= 0.2.9)
-    - SASession (= 0.3.5)
-    - SAUtils (= 1.5.0)
+    - SASession (= 0.3.6)
+    - SAUtils (= 1.5.2)
   - SAJsonParser (1.3.2)
-  - SAModelSpace (0.4.7):
+  - SAModelSpace (0.4.8):
     - SAJsonParser (= 1.3.2)
-    - SAUtils (= 1.5.0)
+    - SAUtils (= 1.5.2)
   - SANetworking (0.2.9)
-  - SASession (0.3.5):
-    - SAUtils (= 1.5.0)
-  - SAUtils (1.5.0)
+  - SASession (0.3.6):
+    - SAUtils (= 1.5.2)
+  - SAUtils (1.5.2)
 
 DEPENDENCIES:
   - SACPI (from `../`)
@@ -21,13 +21,13 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SACPI: eadee4fdb0fdf34bfe99907fb8136d0871fb8262
+  SACPI: c8d60be5f6e55a052fac49d3c0510d691b9a18f8
   SAJsonParser: d0db6d8c737c04f8bf4e9474e82825347aa24f58
-  SAModelSpace: c0fceb7fdbc51bf3455864a9e73496630d801223
+  SAModelSpace: b46a2d5dfd64d5da1378be781c9005a529a727ad
   SANetworking: 40e2a8ffd5c680be57dfd91426f3c74933ad1d80
-  SASession: 132766325ba7bf55d283bb3bfa4bc5a8c470347e
-  SAUtils: 1e8b881ca8c7fac2749c8fd9b851f0b344611035
+  SASession: 4d3b3825661fdc741702203e68b9c4f08170144e
+  SAUtils: c0d6c68af97b4fdc18a1dcc613f9b5cde25b78f8
 
 PODFILE CHECKSUM: 50a1617d913c6682c558f2c3345ad4f0dd02a7a4
 
-COCOAPODS: 1.2.0.beta.1
+COCOAPODS: 1.2.1

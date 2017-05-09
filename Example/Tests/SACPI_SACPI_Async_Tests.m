@@ -65,7 +65,7 @@
         //   installed "tv.superawesome.demoapp",
         // - see if the main CPI method executes correctly against a new click
         [[SACPI getInstance] handleInstall:session
-                                withTarget:@"tv.superawesome.demoapp"
+                                withTarget:@"tv.superawesome.SuperAwesome"
                                andResponse:^(BOOL success) {
         
                                       XCTAssertTrue(success);
@@ -102,7 +102,7 @@
     NSString *clickUrl = [NSString stringWithFormat:@"%@/click", [session getBaseUrl]];
     NSDictionary *clickQuery = @{
                                  @"placement" : @(588),
-                                 @"sourceBundle" : [session getBundleId],
+                                 @"bundle" : [session getBundleId],
                                  @"creative" : @(5778),
                                  @"line_item": @(1063),
                                  @"ct": @([session getConnectivityType]),
