@@ -1,1 +1,1 @@
-../../../SAModelSpace/Pod/Classes/SADetails.h
+../../../SAModelSpace/Pod/Classes/SAAd/SADetails.h

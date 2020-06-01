@@ -1,1 +1,1 @@
-../../../SAModelSpace/Pod/Classes/SAVASTMedia.h
+../../../SAModelSpace/Pod/Classes/VASTAd/SAVASTMedia.h

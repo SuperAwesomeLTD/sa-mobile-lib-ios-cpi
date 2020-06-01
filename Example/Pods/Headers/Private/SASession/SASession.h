@@ -1,1 +1,1 @@
-../../../SASession/Pod/Classes/SASession.h
+../../../SASession/Pod/Classes/Session/SASession.h

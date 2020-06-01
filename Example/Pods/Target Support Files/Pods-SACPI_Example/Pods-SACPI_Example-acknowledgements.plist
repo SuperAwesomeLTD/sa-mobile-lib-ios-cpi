@@ -356,7 +356,7 @@ permanent authorization for you to choose that version for the
 Library.
 </string>
 			<key>License</key>
-			<string>GNU GENERAL PUBLIC LICENSE Version 3</string>
+			<string>GNU LESSER GENERAL PUBLIC LICENSE Version 3</string>
 			<key>Title</key>
 			<string>SAJsonParser</string>
 			<key>Type</key>
@@ -531,7 +531,7 @@ permanent authorization for you to choose that version for the
 Library.
 </string>
 			<key>License</key>
-			<string>GNU GENERAL PUBLIC LICENSE Version 3</string>
+			<string>GNU LESSER GENERAL PUBLIC LICENSE Version 3</string>
 			<key>Title</key>
 			<string>SAModelSpace</string>
 			<key>Type</key>
@@ -706,7 +706,7 @@ permanent authorization for you to choose that version for the
 Library.
 </string>
 			<key>License</key>
-			<string>GNU GENERAL PUBLIC LICENSE Version 3</string>
+			<string>GNU LESSER GENERAL PUBLIC LICENSE Version 3</string>
 			<key>Title</key>
 			<string>SANetworking</string>
 			<key>Type</key>
@@ -881,7 +881,7 @@ permanent authorization for you to choose that version for the
 Library.
 </string>
 			<key>License</key>
-			<string>GNU GENERAL PUBLIC LICENSE Version 3</string>
+			<string>GNU LESSER GENERAL PUBLIC LICENSE Version 3</string>
 			<key>Title</key>
 			<string>SASession</string>
 			<key>Type</key>
@@ -1056,7 +1056,7 @@ permanent authorization for you to choose that version for the
 Library.
 </string>
 			<key>License</key>
-			<string>GNU GENERAL PUBLIC LICENSE Version 3</string>
+			<string>GNU LESSER GENERAL PUBLIC LICENSE Version 3</string>
 			<key>Title</key>
 			<string>SAUtils</string>
 			<key>Type</key>
